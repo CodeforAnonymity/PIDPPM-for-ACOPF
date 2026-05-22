@@ -3,7 +3,7 @@
 ## Overview
 
 This repository contains a simplified implementation accompanying the paper:  
-**"A Physics-Informed and Score-Based Diffusion Approach for Enhanced AC-OPF Solving"**.  
+**"A Physics-Informed Denoising Diffusion Approach for Enhanced AC Optimal Power Flow Solutions"**.  
 
 Because of GitHub’s 25 MB file size limit, the dataset is not included in this repository. However, users can generate their own data by running the `Data_Generator.jl` script.
 
