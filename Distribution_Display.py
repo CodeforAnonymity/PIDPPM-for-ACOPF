@@ -1,11 +1,3 @@
-'''
-Descripttion: 
-Author: JIANG Bozhen
-version: 
-Date: 2026-03-18 20:15:04
-LastEditors: JIANG Bozhen
-LastEditTime: 2026-03-20 19:56:03
-'''
 import numpy as np
 from matplotlib import pyplot as plt
 
