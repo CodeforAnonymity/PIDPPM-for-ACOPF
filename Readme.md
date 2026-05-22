@@ -5,8 +5,6 @@
 This repository contains a simplified implementation accompanying the paper:  
 **"A Physics-Informed and Score-Based Diffusion Approach for Enhanced AC-OPF Solving"**.  
 
-Due to ongoing updates on TechRxiv, we are unable to update our previous version, *"Learning the Direction Fields of the ACOPF Solution Space: A Score-Based Diffusion Approach"*. Therefore, we have published the latest version on GitHub and will keep it updated until TechRxiv permits further updates.
-
 Because of GitHub’s 25 MB file size limit, the dataset is not included in this repository. However, users can generate their own data by running the `Data_Generator.jl` script.
 
 ## Repository Contents
