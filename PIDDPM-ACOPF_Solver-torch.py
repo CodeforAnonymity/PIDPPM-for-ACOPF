@@ -705,18 +705,10 @@ class DPPMTrainer:
                 # 去噪步骤
                 eps_theta = self.model_DDPM(z_samples, bt, z_cons)
                 z_samples = (z_samples - (beta_t / bar_beta_t) * eps_theta) / sqrt_alpha_t
-                
-                # # 添加噪声（t > 0 时）
-                # if current_t > 0:
-                #     sigma_t = torch.sqrt(self.beta[current_t])
-                #     z_samples += torch.randn_like(z_samples) * sigma_t
-            
+                            
             # 裁剪到[-1, 1]
             if scaler_flag == 1:
                 z_samples = torch.clamp(z_samples, -1, 1)            
-            # else:
-            #     z_samples[:,:54] = torch.clamp(z_samples[:,:54], Pg_min_tensor, Pg_max_tensor)    
-            #     z_samples[:,54:] = torch.clamp(z_samples[:,54:], Vm_min_tensor, Vm_max_tensor)  
                 
             return z_samples.cpu().numpy()
 
